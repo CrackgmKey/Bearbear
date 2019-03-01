@@ -38,7 +38,7 @@
   <center class="half">
     <img src="http://123.207.156.197/imgapp/1.jpg" width="40%"   height="500">
 </center>
-> ### **分类**
+ ### **分类**
   <center class="half">
     <img src="http://123.207.156.197/app/021.jpg" width="40%"  height="500" >
 </center>
