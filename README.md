@@ -23,9 +23,10 @@
 > * 提供足迹模块入库,当前版本显示,点击用户头像可以进行登陆,注册等等
 
 ###效果展示
- ####首页
+
+< ####首页
   <center class="half">
-    <img src="http://123.207.156.197/app/021.jpg" width="50%"   height="700"><img src="http://123.207.156.197/app/022.gif" width="50%"  height="700" />
+    <img src="http://123.207.156.197/imgapp/12.png" width="50%"   height="700"><img src=http://123.207.156.197/imgapp/home.gif" width="50%"  height="700" />
 </center>
  ####分类
   <center class="half">
