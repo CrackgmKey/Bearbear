@@ -25,19 +25,19 @@
 ###效果展示
 > ####首页
 >  <center class="half">
-    <img src="http://123.207.156.197/imgapp/12.png" width="50%"  height="700"><img src="http://123.207.156.197/imgapp/home.gif" width="50%" height="700" />
+    <img src="http://123.207.156.197/imgapp/12.png" width="50%"  height="700">
 </center>
 > ####分类
 >  <center class="half">
-    <img src="http://123.207.156.197/app/021.jpg" width="50%"   height="700"><img src="http://123.207.156.197/app/022.gif" width="50%"  height="700" />
+    <img src="http://123.207.156.197/app/021.jpg" width="50%"   height="700">
 </center>
 > ####视频购
 >  <center class="half">
-    <img src="http://123.207.156.197/app/031.jpg" width="50%"  height="700" ><img src="http://123.207.156.197/app/032.gif" width="50%"  height="700" />
+    <img src="http://123.207.156.197/app/031.jpg" width="50%"  height="700" >
 </center>
 > ####抢购
 >  <center class="half">
-    <img src="http://123.207.156.197/app/041.jpg" width="50%"   height="700"><img src="http://123.207.156.197/app/042.gif" width="50%"  height="700" />
+    <img src="http://123.207.156.197/app/041.jpg" width="50%"   height="700">
 </center>
 > ####我的
 >  <center class="half">
