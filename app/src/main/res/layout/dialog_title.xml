@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_dialog">
+
+        <TextView
+            android:id="@id/title"
+            style="@style/style_dialog_title" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_below="@id/title"
+            android:layout_marginTop="5.0dip"
+            android:background="@color/gray_name" />
+
+        <TextView
+            android:id="@+id/tip"
+            android:padding="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20.0dip"
+            android:layout_marginTop="80.0dip"
+            android:text="您的使用时间已经过期"
+            android:textColor="@color/black"
+            android:textSize="16.0sp" />
+
+        <Button
+            android:id="@+id/btn_recharge"
+            android:layout_width="fill_parent"
+            android:layout_height="35.0dip"
+            android:layout_below="@id/tip"
+            android:layout_marginBottom="30.0dip"
+            android:layout_marginLeft="35.0dip"
+            android:layout_marginRight="35.0dip"
+            android:layout_marginTop="10.0dip"
+            android:background="@drawable/red_button_background"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="16.0sp" />
+    </RelativeLayout>
+</LinearLayout>

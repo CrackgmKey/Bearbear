@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:orientation="horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.taobao.library.VerticalBannerView
+        android:id="@+id/banner_01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:animDuration="900"
+        app:gap="4000"/>
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:padding="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="40dp"
+        android:id="@+id/image_picId"
+        android:layout_height="40dp" />
+
+    <LinearLayout android:orientation="horizontal"
+        android:id="@+id/tunme"
+        android:layout_toRightOf="@+id/image_picId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView android:text="我是谁" android:layout_gravity="center"
+            android:layout_width="wrap_content" android:layout_marginLeft="@dimen/x20"
+            android:textColor="@color/bg_color" android:id="@+id/tv_name"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_toRightOf="@+id/image_picId"
+        android:layout_below="@+id/tunme" android:layout_marginTop="@dimen/x20"
+        android:layout_width="match_parent" android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="我是谁啊啊啊
+啊
+aaaa啊
+啊啊啊的
+阿达的
+阿萨德"
+            android:layout_marginLeft="@dimen/x20"
+            android:textColor="@color/cc"
+            android:id="@+id/tv_titles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.w4lle.library.NineGridlayout
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginTop="8dp"
+            android:id="@+id/iv_ngrid_layout"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

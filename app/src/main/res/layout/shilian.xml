@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <View n1:id="@+id/bar" n1:layout_width="fill_parent" n1:layout_height="@dimen/dp_24" />
+    <LinearLayout n1:gravity="right" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <ImageView n1:id="@+id/back" n1:layout_width="@dimen/dp_18" n1:layout_height="@dimen/dp_18" n1:layout_marginTop="@dimen/dp_10" n1:layout_marginRight="@dimen/dp_32" n1:src="@mipmap/login_close" />
+    </LinearLayout>
+    <LinearLayout n1:gravity="center_horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <ImageView n1:layout_width="@dimen/dp_90" n1:layout_height="@dimen/dp_118" n1:layout_marginTop="@dimen/dp_34" n1:src="@mipmap/login_icon" />
+    </LinearLayout>
+    <LinearLayout n1:gravity="bottom" n1:orientation="vertical" n1:paddingBottom="@dimen/dp_74" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <LinearLayout n1:gravity="center" n1:id="@+id/login_register" n1:background="@drawable/login_btn_style" n1:layout_width="fill_parent" n1:layout_height="@dimen/dp_41" n1:layout_marginLeft="@dimen/dp_17" n1:layout_marginRight="@dimen/dp_17">
+            <TextView n1:textSize="15sp" n1:textColor="@color/white" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="注册" />
+        </LinearLayout>
+        <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/dp_22" n1:layout_marginStart="@dimen/dp_17" n1:layout_marginEnd="@dimen/dp_17">
+            <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:id="@+id/login_phone" n1:background="@drawable/login_btn_two_style" n1:layout_width="0.0dip" n1:layout_height="@dimen/dp_41" n1:layout_weight="1.0">
+                <ImageView n1:layout_width="@dimen/dp_28" n1:layout_height="@dimen/dp_28" n1:src="@mipmap/login_phone" />
+                <TextView n1:textSize="15.0sp" n1:textColor="#ff666666" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="手机登录" n1:layout_marginStart="@dimen/dp_20" />
+            </LinearLayout>
+            <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:id="@+id/login_wechat" n1:background="@drawable/login_btn_two_style" n1:layout_width="0.0dip" n1:layout_height="@dimen/dp_41" n1:layout_weight="1.0" n1:layout_marginStart="@dimen/dp_8">
+                <ImageView n1:layout_width="@dimen/dp_28" n1:layout_height="@dimen/dp_28" n1:src="@mipmap/login_wechat" />
+                <TextView n1:textSize="15.0sp" n1:textColor="#ff666666" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="微信登录" n1:layout_marginStart="@dimen/dp_20" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

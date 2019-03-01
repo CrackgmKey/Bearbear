@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cklingjuan.ui.activity.SupersearchActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_width="match_parent"
+        android:layout_height="21dp"/>
+    <RelativeLayout android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:id="@+id/senctoolbar"
+        android:padding="@dimen/x4"
+        android:layout_below="@+id/toolbar"
+        android:layout_height="@dimen/dimen_38">
+
+        <LinearLayout android:id="@+id/llTop"
+           android:gravity="center_vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <EditText
+                android:id="@+id/tvSearch"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_25"
+                android:layout_marginLeft="@dimen/dimen_8"
+                android:layout_marginRight="@dimen/dimen_35"
+                android:background="@drawable/bg_white2"
+                android:drawableLeft="@mipmap/icon_search2"
+                android:drawablePadding="@dimen/dimen_8"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dimen_15"
+                android:maxLength="30"
+                android:maxLines="1"
+                android:imeOptions="actionSearch"
+                android:paddingRight="@dimen/dimen_20"
+                android:hint="请输入关键词"
+                android:textColor="@color/viewfinder_frame"
+                android:textSize="@dimen/text_13" />
+        </LinearLayout>
+
+        <TextView
+            android:text="@string/sousuo" android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:id="@+id/souguo"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/x4"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_below="@+id/senctoolbar"
+        android:layout_width="match_parent" android:layout_marginTop="@dimen/x1"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+
+                    android:text="@string/whatyoulike" android:textColor="@color/bg_blue"
+                    android:layout_width="wrap_content" android:layout_margin="@dimen/dimen_10"
+                    android:layout_height="wrap_content" />
+
+                <com.nex3z.flowlayout.FlowLayout
+                    android:layout_margin="@dimen/x4"
+                    android:id="@+id/whatyoulayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:flRowVerticalGravity="center"
+                    app:flChildSpacing="8dp"
+                    app:flChildSpacingForLastRow="align"
+                    app:flRowSpacing="8dp"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="vertical" android:layout_marginTop="@dimen/x2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+              <RelativeLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="40dp">
+
+                  <TextView
+                      android:text="@string/historicalrecords" android:textColor="@color/bg_blue"
+                      android:layout_width="wrap_content" android:layout_margin="@dimen/dimen_10"
+                      android:layout_height="wrap_content" />
+
+                  <ImageView
+                      android:id="@+id/clarimage"
+                      android:layout_width="30dp" android:layout_centerVertical="true"
+                      android:layout_height="30dp" android:layout_marginRight="@dimen/y10"
+                      android:layout_alignParentEnd="true"
+                      android:layout_alignParentTop="true"
+                      android:src="@mipmap/laji" />
+
+              </RelativeLayout>
+
+                <com.nex3z.flowlayout.FlowLayout
+                    android:layout_margin="@dimen/x4"
+                    android:id="@+id/historylayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:flRowVerticalGravity="center"
+                    app:flChildSpacing="8dp"
+                    app:flChildSpacingForLastRow="align"
+                    app:flRowSpacing="8dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/reclcieviwe"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+
+
+</RelativeLayout>

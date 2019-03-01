@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical"
+    android:id="@+id/baselayouts"
+    android:layout_margin="@dimen/x4"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="30dp">
+
+    <TextView
+        android:text="综合排序" android:textSize="16sp" android:padding="@dimen/x4"
+        android:layout_width="wrap_content" android:gravity="center"
+        android:id="@+id/tv_title"
+        android:layout_height="match_parent"  android:textColor="@color/font_ff364d"/>
+
+    <ImageView
+        android:src="@mipmap/pairnumber" android:layout_alignParentRight="true"
+        android:layout_width="wrap_content" android:layout_marginRight="@dimen/x10"
+        android:layout_height="match_parent" android:id="@+id/imageHong"/>
+
+</RelativeLayout>

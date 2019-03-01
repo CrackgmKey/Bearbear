@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.cklingjuan.ui.activity.PhoneLoginActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/baseviwes"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:background="@color/error_color_material_dark"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <ImageView
+            android:id="@+id/image_return"
+            android:layout_width="@dimen/dimen_18"
+            android:layout_height="14dp"
+            android:src="@mipmap/returnbb" />
+        <TextView
+            android:id="@+id/title_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="用户登录"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="normal" />
+
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout android:orientation="vertical"
+
+        android:layout_margin="@dimen/x14"
+        android:layout_below="@+id/baseviwes"
+       android:padding="@dimen/x14"
+        android:background="@drawable/login_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="用户名"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/username"
+            android:hint="@string/app_name"
+            android:inputType="phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="密码"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/password"
+            android:hint="@string/app_name"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:text="登录" android:id="@+id/user_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="400dp"
+    android:layout_height="wrap_content" android:padding="@dimen/x4"
+    android:layout_centerInParent="true"
+    android:layout_gravity="center_horizontal">
+
+    <LinearLayout android:background="@drawable/bg_popwinno"
+        android:layout_width="match_parent" android:layout_margin="@dimen/x4"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteY="5dp"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/imageTu" android:padding="@dimen/x4"
+            android:layout_width="310dp"
+            android:layout_height="175dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/hhbj" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/x4"
+            android:ellipsize="end"
+            android:maxLength="6"
+            android:maxLines="1"
+            android:text="测试标题"
+            android:textAllCaps="true"
+            android:textSize="@dimen/dimen_16" />
+
+
+        <LinearLayout android:padding="@dimen/x4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_juanhou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="卷后：19.9"
+                android:textColor="@color/viewfinder_laser" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/bg_coupon_sc9">
+
+                <TextView
+                    android:id="@+id/sp_juan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingLeft="10.0dip"
+                    android:text="90"
+                    android:textColor="#ffffffff"
+                    android:textSize="12.0sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingRight="10.0dip"
+                    android:text="元券"
+                    android:textColor="#ffffffff"
+                    android:textSize="12.0sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/x2"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_xiao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已售39" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

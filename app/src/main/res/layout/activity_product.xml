@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:category="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.cklingjuan.ui.activity.ProductActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="@color/cc"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_width="match_parent"
+        android:layout_height="21dp"/>
+
+    <RelativeLayout android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:id="@+id/senctoolbar"
+        android:background="@color/cc"
+        android:padding="@dimen/x4"
+        android:layout_below="@+id/toolbar"
+        android:layout_height="@dimen/dimen_38">
+
+        <ImageView
+            android:id="@+id/image_return"
+            android:src="@mipmap/returnbb"
+            android:layout_width="@dimen/dimen_18"
+            android:layout_height="match_parent" />
+
+        <LinearLayout android:id="@+id/llTop"
+            android:layout_toRightOf="@+id/image_return"
+            android:gravity="center_vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <EditText
+                android:id="@+id/tvSearch"
+                android:focusable="false"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_25"
+                android:layout_marginLeft="@dimen/dimen_8"
+                android:layout_marginRight="@dimen/dimen_35"
+                android:background="@drawable/bg_white5"
+                android:drawableLeft="@mipmap/icon_search2"
+                android:drawablePadding="@dimen/dimen_8"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dimen_15"
+                android:maxLength="30"
+                android:maxLines="1"
+                android:imeOptions="actionSearch"
+                android:paddingRight="@dimen/dimen_20"
+                android:hint="请输入关键词"
+                android:textColor="@color/viewfinder_frame"
+                android:textSize="@dimen/text_13" />
+        </LinearLayout>
+
+        <ImageView
+           android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:id="@+id/qiehuan"
+
+            android:background="@mipmap/heng"
+            android:scaleType="fitXY"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/x4"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/x4"
+            android:layout_height="@dimen/y40" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:background="#fff"
+        android:id="@+id/vwiw"
+        android:layout_width="match_parent" android:gravity="center_vertical"
+        android:layout_height="30dp">
+
+        <com.lingjuan.app.wigth.CategoryButton
+            android:id="@+id/categobtn1"
+            category:isimage = "true"
+            category:textname="综合"
+            android:layout_weight="1"
+            category:itbright="true"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="wrap_content"/>
+
+        <com.lingjuan.app.wigth.CategoryButton
+            android:id="@+id/categobtn2"
+            category:isimage="false"
+            category:textname="销量"
+            android:layout_weight="1"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="wrap_content"/>
+
+        <com.lingjuan.app.wigth.CategoryButton
+            android:id="@+id/categobtn3"
+            category:isimage="false"
+            category:textname="价格"
+            category:issort="true"
+            android:layout_weight="1"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="wrap_content"/>
+
+
+        <com.lingjuan.app.wigth.CategoryButton
+            android:id="@+id/categobtn4"
+            category:isimage="false"
+            category:itbright="false"
+            category:textname="筛选"
+            category:imageyesId="@mipmap/heng"
+            category:imagenotId="@mipmap/shu"
+            android:layout_weight="1"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <View
+        android:background="@color/material_grey_600" android:layout_marginTop="@dimen/x4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" android:visibility="gone"
+        tools:ignore="PrivateResource" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/refresh_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.yanzhenjie.recyclerview.SwipeRecyclerView
+                    android:id="@+id/recycleview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+
+            <RelativeLayout
+                android:visibility="gone" android:id="@+id/zhezhaobuju"
+                android:background="#50000000"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

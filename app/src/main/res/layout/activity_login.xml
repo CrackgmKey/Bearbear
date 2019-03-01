@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@+id/bar" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_24" />
+    <LinearLayout android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/back" android:layout_width="@dimen/dimen_18" android:layout_height="@dimen/dimen_18" android:layout_marginTop="@dimen/dimen_10" android:layout_marginRight="@dimen/dimen_32" android:src="@mipmap/login_close" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical">
+        <ImageView android:layout_width="@dimen/dimen_90" android:layout_height="@dimen/dimen_118" android:layout_marginTop="@dimen/dimen_34" android:src="@mipmap/logoxiong" />
+        <TextView
+            android:text="@string/app_name" android:textColor="@color/hongdui"
+            android:layout_width="wrap_content" android:textSize="@dimen/sp_20"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:gravity="bottom" android:orientation="vertical" android:paddingBottom="@dimen/dp_74" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:id="@+id/login_register" android:background="@drawable/login_btn_style" android:layout_width="fill_parent" android:layout_height="@dimen/dp_41" android:layout_marginLeft="@dimen/dp_17" android:layout_marginRight="@dimen/dp_17">
+            <TextView android:textSize="15sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="注册" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_22" android:layout_marginStart="@dimen/dp_17" android:layout_marginEnd="@dimen/dp_17">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/login_phone" android:background="@drawable/login_btn_two_style" android:layout_width="0.0dip" android:layout_height="@dimen/dp_41" android:layout_weight="1.0">
+                <ImageView android:layout_width="@dimen/dimen_28" android:layout_height="@dimen/dimen_28" android:src="@mipmap/login_phone" />
+                <TextView android:textSize="15.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="手机登录" android:layout_marginStart="@dimen/dimen_20" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/login_wechat" android:background="@drawable/login_btn_two_style" android:layout_width="0.0dip" android:layout_height="@dimen/dp_41" android:layout_weight="1.0" android:layout_marginStart="@dimen/dimen_8">
+                <ImageView android:layout_width="@dimen/dimen_28" android:layout_height="@dimen/dimen_28" android:src="@mipmap/login_wechat" />
+                <TextView android:textSize="15.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="微信登录" android:layout_marginStart="@dimen/dimen_20" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

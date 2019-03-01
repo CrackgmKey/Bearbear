@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">小熊优品</string>
+    <string name="home">首页</string>
+    <string name="superclass">分类</string>
+    <string name="rushtobuy">抢购</string>
+    <string name="find">视频秀</string>
+    <string name="my">我的</string>
+    <drawable name="clr_normal">@color/button_material_dark</drawable>
+    <drawable name="clr_pressed">@color/button_material_light</drawable>
+    <string name="historicalrecords">历史记录</string>
+    <string name="whatyoulike">热门搜索</string>
+    <string name="sousuo">搜索</string>
+    <string name="jiazai">加载成功</string>
+    <string name="qingchu">确定清空历史搜索吗</string>
+    <string name="qingchuyes">清除成功</string>
+
+    <string name="title_alert">提示信息</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="monthlysales">月销量%s笔</string>
+    <string name="couponstarttime">最后使用日期：%s</string>
+    <string name="keyong">可使用</string>
+    <string name="bukekeyong">已过期</string>
+    <string name="updatecontent">1.修复BUG\n2.优化界面\n3.更新商品数据\n4.欢迎大家Star和提issue</string>
+
+    <string name="sousou_zonghe">默认</string>
+    <string name="sousou_xiaolinag">销量</string>
+    <string name="sousou_jiage">价格</string>
+    <string name="sousou_shaixuan">过滤</string>
+</resources>

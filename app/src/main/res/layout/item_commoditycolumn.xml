@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@+id/baseview"
+    android:layout_gravity="center" android:padding="@dimen/dimen_1"
+    android:background="@color/grayeee" android:layout_width="fill_parent" android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView android:layout_width="150dp"  android:layout_gravity="center" android:scaleType="fitXY" android:id="@+id/image_item"  android:layout_height="148dp"/>
+
+        <ImageView android:layout_centerInParent="true"
+            android:src="@mipmap/startplay" android:id="@+id/iamge_play"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:background="#fff"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout android:gravity="center" android:layout_weight="1" android:orientation="vertical" android:id="@+id/buju1" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="center" android:textSize="13.0sp" android:textColor="#ff000000" android:id="@+id/sp_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="1.0dip" android:text="水晶镶金吊坠" android:maxLines="1" />
+        </LinearLayout>
+        <LinearLayout android:layout_weight="1" android:gravity="center" android:layout_marginLeft="3dp" android:layout_gravity="center" android:id="@+id/bju2" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:layout_width="match_parent" android:layout_height="wrap_content" >
+            <LinearLayout android:paddingTop="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="11.0sp" android:textColor="#ff8f8f8f" android:id="@+id/sp_juan2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="原价:" />
+                <TextView android:textSize="11.0sp" android:textColor="#ff919191" android:id="@+id/sp_yuanjia" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="98.00" android:layout_toRightOf="@+id/sp_juan2" />
+            </LinearLayout>
+            <LinearLayout android:layout_marginLeft="@dimen/dimen_12" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView  android:layout_width="wrap_content" android:textSize="11.0sp" android:textColor="#ff8f8f8f" android:gravity="right" android:layout_gravity="right" android:paddingLeft="1dp" android:paddingTop="3.0dip" android:paddingBottom="1.0dip"  android:layout_height="fill_parent" android:layout_marginLeft="1dp" android:text="券后:" android:layout_weight="2.0" />
+                <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#fffb0000" android:id="@+id/sp_xianjia" android:paddingLeft="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="9999" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_weight="1" android:layout_marginBottom="@dimen/dimen_12" android:gravity="center" android:layout_marginTop="@dimen/dimen_6" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_gravity="center">
+            <LinearLayout  android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="12.0sp" android:textColor="#ffd9ae6f"  android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="已抢:" />
+                <TextView android:textSize="12.0sp" android:textColor="#ffd9ae6f" android:id="@+id/sp_xiaoliang" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="800" />
+            </LinearLayout>
+            <LinearLayout android:layout_marginLeft="@dimen/dimen_12" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:background="@mipmap/bg_coupon_sc9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+                    <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@+id/sp_juan" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="90" />
+                    <TextView android:textSize="12.0sp" android:textColor="#ffffffff"  android:gravity="center" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="元券" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

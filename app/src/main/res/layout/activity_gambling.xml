@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.cklingjuan.ui.activity.GamblingSpActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/baseviwes"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:background="@color/error_color_material_dark">
+
+        <ImageView
+            android:id="@+id/image_return"
+            android:layout_width="@dimen/dimen_18"
+            android:layout_height="14dp"
+            android:src="@mipmap/returnbb" />
+        <TextView
+            android:id="@+id/title_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="积分购"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="normal" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/reclcieviwe"
+            android:background="@color/cc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <com.lingjuan.app.wigth.LoadLayout
+            android:id="@+id/loading_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+
+</LinearLayout>

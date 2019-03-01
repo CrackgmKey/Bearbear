@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape  xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 实心 -->
+    <solid android:color="@color/pickerview_timebtn_nor"/>
+
+    <!-- 圆角 -->
+    <corners android:radius="13dp"/>
+
+
+
+</shape >

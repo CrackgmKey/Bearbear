@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:id="@+id/baceonclcik"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/imageId"
+        android:layout_gravity="center"
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/x40" />
+
+    <TextView android:textSize="14sp" android:id="@+id/erjiName"
+        android:text="惠涛" android:textColor="#000"
+        android:layout_width="match_parent" android:gravity="center"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

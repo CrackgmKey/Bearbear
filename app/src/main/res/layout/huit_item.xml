@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="#fff"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/baseview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            >
+
+            <ImageView
+                android:id="@+id/image_item"
+                android:padding="@dimen/dimen_6"
+                android:layout_width="@dimen/y150"
+                android:layout_height="@dimen/y80"
+                android:scaleType="fitXY"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:src="@mipmap/iasdng" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/buju1"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/sp_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:drawableLeft="@mipmap/xinpint"
+                    android:gravity="center_horizontal"
+                    android:maxLines="1"
+                    android:padding="5dp"
+                    android:text="【水晶镶金】吊坠  大号笑佛 观音吊坠 "
+                    android:textColor="#000"
+                    android:textSize="@dimen/txt_12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/zhuquanjia1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/buju1"
+                android:layout_marginTop="@dimen/y12"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="原价:"
+                    android:textColor="#8f8f8f"
+                    android:textSize="@dimen/txt_12" />
+
+                <TextView
+                    android:id="@+id/sp_yuanjia"
+                    android:layout_toRightOf="@+id/sp_juan2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="800.0"
+                    android:textColor="#919191"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/sp_xiaoliang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/y7"
+                    android:padding="5dp"
+                    android:text="已抢:800.0"
+                    android:textColor="#919191"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/miaotime"
+                android:visibility="gone"
+                android:layout_below="@+id/zhuquanjia1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginLeft="@dimen/x4"
+                    android:text="秒杀时间："
+                    android:textColor="#fb0000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/run_time"
+                    android:text="20:13"
+                    android:textSize="11sp"
+                    android:textColor="#fb0000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/miaotime"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/bg_quan1"
+                    android:paddingBottom="1.0dip"
+                    android:paddingLeft="5.0dip"
+                    android:paddingTop="1.0dip"
+                    android:text="券"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/txt_12" />
+
+                <TextView
+                    android:id="@+id/sp_juan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="17dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/bg_quan2"
+                    android:paddingBottom="1.0dip"
+                    android:paddingRight="@dimen/y5"
+                    android:paddingTop="1.0dip"
+                    android:text="90"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/txt_12" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:layout_weight="2"
+                    android:layout_marginLeft="@dimen/y1"
+                    android:paddingBottom="1.0dip"
+                    android:paddingLeft="@dimen/y1"
+                    android:paddingTop="9.0dip"
+                    android:text="券后价:"
+                    android:textColor="#8f8f8f"
+                    android:textSize="@dimen/txt_12" />
+
+                <TextView
+                    android:id="@+id/sp_xianjia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:paddingLeft="@dimen/y1"
+                    android:paddingRight="@dimen/y5"
+                    android:text="￥999.9"
+                    android:textColor="#fb0000"
+                    android:textSize="@dimen/txt_20"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

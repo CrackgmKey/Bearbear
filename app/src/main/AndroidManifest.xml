@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.lingjuan.app">
+
+    <!-- 允许联网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 获取GSM（2g）、WCDMA（联通3g）等网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 获取wifi网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 获取sd卡写的权限，用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 允许读取手机状态 用于创建BmobInstallation -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name=".base.AppManager"
+        android:allowBackup="false"
+        android:icon="@mipmap/logoxiong"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logoxiong"
+        android:supportsRtl="true"
+        android:theme="@style/liwei"
+        tools:replace="android:allowBackup">
+        <activity android:name=".base.BaseActivity" />
+        <activity android:name=".ui.activity.HoneActivity" />
+        <activity android:name=".ui.activity.PurchaseActivity" />
+        <activity android:name=".ui.activity.SplashActivity" />
+        <!-- <activity android:name="com.lingjuan.app.ui.MainActivity" /> -->
+        <activity android:name=".ui.MainActivity"
+            android:resizeableActivity = "true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.SupersearchActivity" />
+        <activity android:name=".ui.activity.ProductActivity" />
+        <activity android:name=".ui.activity.LoginActivity" />
+        <activity android:name=".ui.activity.RegisterActivity" />
+        <activity android:name=".ui.activity.FunctionalCommodityActivity" />
+        <activity android:name=".ui.activity.PhoneLoginActivity" />
+        <activity android:name=".ui.activity.GamblingSpActivity" />
+        <activity android:name=".ui.activity.RushActivity" />
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <!-- 通过AndroidManifest配置AppKey和AppSecret，如果你选择通过代码配置，则不需要配置以下meta-data -->
+        <meta-data
+            android:name="Mob-AppKey"
+            android:value="28a5e0fc8103c" />
+        <meta-data
+            android:name="Mob-AppSecret"
+            android:value="126a03992e22ab62ad4072409952ff48" />
+
+        <activity android:name=".ui.activity.FootprintActivity" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.lingjuan.app.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".ui.activity.EverydayGoodActivity"></activity>
+
+
+
+        <meta-data android:name="android.max_aspect" android:value="2.1" />
+    </application>
+
+</manifest>

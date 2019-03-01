@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingTop="@dimen/dimen_6" android:layout_width="fill_parent" android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout  android:visibility="visible"
+        android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_30">
+        <RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/text_12" android:textColor="@color/bg_f74c6c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="自用购物省钱" android:drawableLeft="@mipmap/icon_dui" android:drawablePadding="@dimen/dimen_6" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/text_12" android:textColor="@color/bg_f74c6c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="分享好友赚钱" android:drawableLeft="@mipmap/icon_dui" android:drawablePadding="@dimen/dimen_6" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/text_12" android:textColor="@color/bg_f74c6c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="超值正品优惠" android:drawableLeft="@mipmap/icon_dui" android:drawablePadding="@dimen/dimen_6" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:background="@color/line" android:layout_width="match_parent" android:layout_height="1.0dip" />
+    <include layout="@layout/layout_taype" android:visibility="gone"/>
+    <include layout="@layout/fragment_rushsig" android:visibility="gone"/>
+</LinearLayout>

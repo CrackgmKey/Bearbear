@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageId"
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="wrap_content"
+        android:layout_height="180dp" />
+
+    <TextView android:textSize="19sp" android:id="@+id/erjiName"
+        android:text="惠涛" android:textColor="#000"
+        android:layout_width="match_parent" android:gravity="center"
+        android:layout_height="wrap_content" />
+</LinearLayout>

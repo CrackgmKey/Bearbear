@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+     android:padding="@dimen/x5"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <recycler.coverflow.RecyclerCoverFlow android:layout_marginTop="@dimen/x50"
+        android:id="@+id/reclcover"    android:background="@mipmap/hhbj"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"/>
+
+</android.support.constraint.ConstraintLayout>

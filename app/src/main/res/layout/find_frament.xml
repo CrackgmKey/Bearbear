@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rush="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="@color/green"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_width="match_parent"
+        android:layout_height="53dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:text="淘抢购"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/dimen_25"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            android:textStyle="normal" />
+
+    </android.support.v7.widget.Toolbar>
+    <RadioGroup
+        android:id="@+id/radidgroup"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/green"
+        android:orientation="horizontal">
+
+        <com.lingjuan.app.wigth.RushRadioButton
+            android:id="@+id/rushbutton1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:button="@null"
+            rush:lowercolor="#FFB90FF"
+            rush:uppercolor="#FFA500"
+            rush:upperTitle="热卖"
+            rush:lowerTitle="每日好货" />
+
+        <com.lingjuan.app.wigth.RushRadioButton
+            android:id="@+id/rushbutton2"
+            android:layout_width="0dp"
+            android:background="@color/transparent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            rush:lowerTitle="实时更新"
+            rush:upperTitle="榜单" />
+
+        <com.lingjuan.app.wigth.RushRadioButton
+            android:id="@+id/rushbutton3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:button="@null"
+            android:gravity="center"
+            rush:lowerTitle="质优价廉"
+            rush:upperTitle="品牌" />
+
+        <com.lingjuan.app.wigth.RushRadioButton
+            android:id="@+id/rushbutton4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:button="@null"
+            android:gravity="center"
+            rush:lowerTitle="10元封顶"
+            rush:upperTitle="好实惠"
+            />
+    </RadioGroup>
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/green">
+
+        </FrameLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="5dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="@dimen/dp_4"
+            app:cardUseCompatPadding="true"
+            app:cardPreventCornerOverlap="false">
+            <include layout="@layout/huit_item"  />
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.yanzhenjie.recyclerview.SwipeRecyclerView
+            android:padding="@dimen/y4"
+            android:id="@+id/recyclview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout >

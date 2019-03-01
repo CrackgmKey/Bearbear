@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content" android:gravity="center"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_codeName"
+            android:textColor="@drawable/product_txtclor"
+            android:text="综合" android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:visibility="visible"
+            android:id="@+id/im_codeName"
+            android:background="@mipmap/pointer0"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+
+        <ImageView
+            android:id="@+id/iamg2"
+            android:visibility="gone"
+            android:background="@mipmap/weixuanzhong"
+            android:layout_width="15dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+</merge>

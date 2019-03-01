@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:orientation="vertical"
+    android:background="#fff"
+    android:layout_height="wrap_content" android:padding="@dimen/x4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/x4">
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="价格区间" />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x5"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_weight="1"
+                android:id="@+id/et_price_min"
+                android:layout_width="0dp"
+                android:paddingLeft="@dimen/x20"
+                android:inputType="numberDecimal"
+                android:maxLength="7"
+                android:layout_height="30dp"
+                android:background="@drawable/bg_whiteadp" />
+
+
+            <View
+                android:layout_width="40dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@color/bg_blue" />
+
+
+            <EditText
+                android:layout_weight="1"
+                android:id="@+id/et_price_max"
+                android:layout_width="0dp"
+                android:maxLength="7"
+                android:paddingLeft="@dimen/x20"
+                android:inputType="numberDecimal"
+                android:layout_height="30dp"
+                android:background="@drawable/bg_whiteadp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView android:layout_marginTop="@dimen/x4"
+        android:layout_width="wrap_content" android:layout_margin="@dimen/x4"
+        android:layout_height="wrap_content"
+        android:text="商品类别" />
+    <LinearLayout android:layout_marginTop="@dimen/x4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/layTmall"
+            android:text="天猫" android:layout_weight="1"
+            android:background="@drawable/select_popwinscreen" android:layout_margin="@dimen/x4"
+            android:layout_width="wrap_content" android:gravity="center" android:textSize="@dimen/dimen_16"
+            android:layout_height="@dimen/y25" />
+
+
+        <TextView
+            android:id="@+id/layTaoBao"
+            android:text="淘宝" android:layout_weight="1"
+            android:background="@drawable/select_popwinscreen" android:layout_margin="@dimen/x4"
+            android:layout_width="wrap_content" android:gravity="center" android:textSize="@dimen/dimen_16"
+            android:layout_height="@dimen/y25" />
+
+        <TextView
+            android:id="@+id/layVideo"
+            android:text="视频购" android:layout_weight="1"
+            android:background="@drawable/select_popwinscreen" android:layout_margin="@dimen/x4"
+            android:layout_width="wrap_content" android:gravity="center" android:textSize="@dimen/dimen_16"
+            android:layout_height="@dimen/y25" />
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:background="@drawable/bg_popwin"
+        android:layout_width="match_parent"
+        android:layout_height="40.0dip" android:layout_marginTop="@dimen/x20"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/positiveButton"
+            android:layout_width="0dp"
+            android:layout_margin="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_dialog_normal_left_white"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/negativeButton"
+            android:layout_width="0dp"
+            android:layout_margin="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_dialog_normal_right_red"
+            android:gravity="center"
+            android:text="@string/ok"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="rush">
+        <!--上文颜色-->
+        <attr name="uppercolor" format="string"/>
+        <!--下文颜色-->
+        <attr name="lowercolor" format="string"/>
+        <!--上文内容-->
+        <attr name="upperTitle" format="string"/>
+        <!--下文内容-->
+        <attr name="lowerTitle" format="string"/>
+        <!--上文文字大小-->
+        <attr name="uppertitlesize" format="string"/>
+        <!--下文内容大小-->
+        <attr name="lowertitlesize" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="category">
+        <attr name="isimage" format="boolean"/>
+        <attr name="textname" format="string"/>
+        <attr name="backcolor" format="color"/>
+        <attr name="imageyesId" format="integer"/>
+        <attr name="imagenotId" format="integer"/>
+        <attr name="itbright" format="boolean"/>
+        <attr name="issort" format="boolean"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="CouponDisplayView">
+        <attr name="CircleColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="TasksCompletedView">
+        <attr name="radius" format="dimension" />
+        <attr name="strokeWidth" format="dimension" />
+        <attr name="circleColor" format="color" />
+        <attr name="ringColor" format="color" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RadioGroup n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@+id/radioGroup" n1:background="@color/white" n1:padding="@dimen/dimen_6" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/dimen_6">
+
+    </RadioGroup>
+</LinearLayout>

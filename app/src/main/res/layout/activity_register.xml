@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <ImageView android:layout_width="@dimen/dp_11" android:layout_height="@dimen/dp_19" android:layout_margin="@dimen/dp_9" android:src="@mipmap/btn_back_default" android:scaleType="centerCrop" android:id="@+id/imge_back"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/sp_17" android:textColor="#ff313131" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:layout_marginBottom="@dimen/dp_10" android:text="注册新账户" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="#ffeaeaea" android:layout_width="fill_parent" android:layout_height="@dimen/dp_1" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dp_54" android:layout_marginLeft="@dimen/dp_28" android:layout_marginTop="@dimen/dp_43" android:layout_marginRight="@dimen/dp_28">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <EditText android:textSize="@dimen/sp_15" android:textColor="#ff666666" android:textColorHint="#ff999999" android:id="@+id/register_phone" android:background="@null" android:layout_width="fill_parent" android:layout_height="0.0dip" android:hint="请输入手机号" android:singleLine="true" android:maxLength="11" android:digits="\ 1234567890" android:layout_weight="1.0" android:inputType="phone" />
+            <View android:background="#fff2f2f2" android:layout_width="fill_parent" android:layout_height="@dimen/dp_0_5" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@+id/register_code_btn" android:background="@drawable/login_code_btn_style" android:layout_width="@dimen/dp_74" android:layout_height="@dimen/dp_21" android:layout_marginStart="@dimen/dp_21">
+            <TextView android:textSize="@dimen/sp_12" android:textColor="#ff959595" android:id="@+id/register_code_btn_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="获取验证码" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/register_code_layout" android:layout_width="fill_parent" android:layout_height="@dimen/dp_54" android:layout_marginLeft="@dimen/dp_28" android:layout_marginRight="@dimen/dp_28">
+        <EditText android:textSize="@dimen/sp_15" android:textColor="#ff666666" android:textColorHint="#ff999999" android:id="@+id/register_code" android:background="@null" android:layout_width="fill_parent" android:layout_height="0.0dip" android:hint="请输入验证码" android:singleLine="true" android:maxLength="6" android:digits="\ 1234567890" android:layout_weight="1.0" android:inputType="number" />
+        <View android:background="#fff2f2f2" android:layout_width="fill_parent" android:layout_height="@dimen/dp_0_5" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/dp_54" android:layout_marginLeft="@dimen/dp_28" android:layout_marginRight="@dimen/dp_28">
+        <EditText android:textSize="@dimen/sp_15" android:textColor="#ff666666" android:textColorHint="#ff999999" android:id="@+id/register_password" android:background="@null" android:layout_width="fill_parent" android:layout_height="0.0dip" android:hint="请设置密码" android:singleLine="true" android:digits="123" android:layout_weight="1.0" android:inputType="textPassword" />
+        <View android:background="#fff2f2f2" android:layout_width="fill_parent" android:layout_height="@dimen/dp_0_5" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/dp_54" android:layout_marginLeft="@dimen/dp_28" android:layout_marginRight="@dimen/dp_28">
+        <EditText android:textSize="@dimen/sp_15" android:textColor="#ff666666" android:textColorHint="#ff999999" android:id="@+id/register_confirm" android:background="@null" android:layout_width="fill_parent" android:layout_height="0.0dip" android:hint="请确认密码" android:singleLine="true"  android:layout_weight="1.0" android:inputType="textPassword" />
+        <View android:background="#fff2f2f2" android:layout_width="fill_parent" android:layout_height="@dimen/dp_0_5" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@+id/register_btn" android:background="@drawable/login_btn_style" android:layout_width="fill_parent" android:layout_height="@dimen/dp_41" android:layout_marginLeft="@dimen/dp_28" android:layout_marginTop="@dimen/dp_45" android:layout_marginRight="@dimen/dp_28">
+        <TextView android:textSize="@dimen/sp_18" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="同意协议并注册" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12">
+        <TextView android:textSize="@dimen/sp_12" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="注册即代表同意" />
+        <TextView android:textSize="@dimen/sp_12" android:textColor="#000" android:id="@+id/register_agreement" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="《小熊优品网络服务使用协议》" />
+    </LinearLayout>
+</LinearLayout>

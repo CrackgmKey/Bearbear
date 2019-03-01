@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!--
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+
+        &lt;!&ndash;app:layout_scrollFlags="scroll|enterAlways 向上滑动ToolBar随时出现&ndash;&gt;
+
+        &lt;!&ndash;app:layout_scrollFlags="scroll|exitUntilCollapsed"
+         向上滑动时保留ToolBar的初始大小&ndash;&gt;
+
+        &lt;!&ndash; app:layout_scrollFlags="scroll|enterAlwaysCollapsed"
+        向上滑动的时候ToolBar隐藏，向下滑动顶部的时候ToolBar出现&ndash;&gt;
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <com.youth.banner.Banner
+                android:id="@+id/banner"
+                android:background="@mipmap/g1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+                    <LinearLayout android:id="@+id/llTop"
+                        android:layout_width="fill_parent"
+                        android:layout_height="?attr/actionBarSize">
+
+                        <TextView
+                            android:layout_marginTop="20dp"
+                            android:id="@+id/tvSearch"
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/dimen_25"
+                            android:layout_marginLeft="@dimen/dimen_20"
+                            android:layout_marginRight="@dimen/dimen_20"
+                            android:background="@drawable/bg_white2"
+                            android:drawableLeft="@mipmap/icon_search2"
+                            android:drawablePadding="@dimen/dimen_8"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/dimen_15"
+                            android:paddingRight="@dimen/dimen_20"
+                            android:text="请输入关键词,找优惠券"
+                            android:textColor="@color/gray999"
+                            android:textSize="@dimen/text_13" />
+                    </LinearLayout>
+
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/xrecyclerview_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />-->
+</android.support.design.widget.CoordinatorLayout>
+
