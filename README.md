@@ -63,7 +63,7 @@
     <img src="http://123.207.156.197/app/081.jpg" width="40%"  height="500" ><img src="http://123.207.156.197/app/082.jpg" width="40%"  height="500" />
 </center>
 
-> ## **APK下载地址**
+> ### **APK下载地址**
  - [下载地址](http://123.207.156.197/yg/updata/1.0.6.apk)
 
 > ### **技术要点**
