@@ -33,7 +33,9 @@
 
 ##效果展示
 > 首页
->  <center class="half">
+  <center class="half">
+</center>
+  <center class="half">
     <img src="http://123.207.156.197/imgapp/1.jpg" width="40%"   height="500">
 </center>
 > 分类
