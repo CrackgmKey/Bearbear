@@ -32,13 +32,13 @@
 > 提供足迹模块入库,当前版本显示,点击用户头像可以进行登陆,注册等等
 
 ##效果展示
-> 首页
+> ## **首页**
   <center class="half">
 </center>
   <center class="half">
     <img src="http://123.207.156.197/imgapp/1.jpg" width="40%"   height="500">
 </center>
-> 分类
+## **分类**
 >  <center class="half">
     <img src="http://123.207.156.197/app/021.jpg" width="40%"  height="500" >
 </center>
