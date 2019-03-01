@@ -41,7 +41,7 @@
 </center>
 > ####我的
 >  <center class="half">
-    <img src="http://123.207.156.197/app/051.jpg" width="50%"  height="700" ><img src="http://123.207.156.197/app/051.jpg" width="50%"  height="700" />
+    <img src="http://123.207.156.197/app/051.jpg" width="50%"  height="700" >
 </center>
 > ####搜索页面 OR 搜索结果
 >  <center class="half">
