@@ -39,15 +39,15 @@
     <img src="http://123.207.156.197/imgapp/1.jpg" width="40%"   height="500">
 </center>
 > ### **分类**
->  <center class="half">
+  <center class="half">
     <img src="http://123.207.156.197/app/021.jpg" width="40%"  height="500" >
 </center>
 > ### **抢购**
->  <center class="half">
+  <center class="half">
     <img src="http://123.207.156.197/app/041.jpg" width="40%"   height="500">
 </center>
 > #我的
->  <center class="half">
+  <center class="half">
     <img src="http://123.207.156.197/app/051.jpg" width="40%"  height="500" >
 </center>
 > ##搜索页面 OR 搜索结果
