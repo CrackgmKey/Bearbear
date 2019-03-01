@@ -26,7 +26,7 @@
 
 < ####首页
   <center class="half">
-    <img src="http://123.207.156.197/imgapp/12.png" width="50%"   height="700"><img src=http://123.207.156.197/imgapp/home.gif" width="50%"  height="700" />
+    <img src="http://123.207.156.197/imgapp/1.JPG" width="50%"   height="700"><img src=http://123.207.156.197/imgapp/home.gif" width="50%"  height="700" />
 </center>
  ####分类
   <center class="half">
