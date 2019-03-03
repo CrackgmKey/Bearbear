@@ -31,9 +31,7 @@
 
 > 提供足迹模块入库,当前版本显示,点击用户头像可以进行登陆,注册等等
 
-[后台模块地址](https://github.com/CrackgmKey/BearBackstage)
-
-
+小熊优品后台页面：[后台模块地址](https://github.com/CrackgmKey/BearBackstage)
 
 > ## **效果展示**
 首页
