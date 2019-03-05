@@ -12,7 +12,7 @@ public class Constant {
     //第一次加载
     public static boolean CK_SWITCH = true;
     //客服QQ
-    public static String USER_QQ_NUM = "1171628833";
+    public static String USER_QQ_NUM = "";
     //是否为调试环境
     public static final boolean DEBUG = true;
     //分类排序MAP
