@@ -30,8 +30,9 @@
         <activity android:name=".ui.activity.PurchaseActivity" />
         <activity android:name=".ui.activity.SplashActivity" />
         <!-- <activity android:name="com.lingjuan.app.ui.MainActivity" /> -->
-        <activity android:name=".ui.MainActivity"
-            android:resizeableActivity = "true">
+        <activity
+            android:name=".ui.MainActivity"
+            android:resizeableActivity="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -72,11 +73,13 @@
                 android:resource="@xml/file_paths" />
         </provider>
 
-        <activity android:name=".ui.activity.EverydayGoodActivity"></activity>
+        <activity android:name=".ui.activity.EverydayGoodActivity" />
 
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.1" />
 
-
-        <meta-data android:name="android.max_aspect" android:value="2.1" />
+        <activity android:name=".ui.activity.DrawActivity"/>
     </application>
 
 </manifest>

@@ -42,6 +42,7 @@ import com.lingjuan.app.mvp.commodity.CommodityInterface;
 import com.lingjuan.app.mvp.data.persenter.DataPersenter;
 import com.lingjuan.app.mvp.data.view.DataView;
 import com.lingjuan.app.mvp.updata.Contract;
+import com.lingjuan.app.ui.activity.DrawActivity;
 import com.lingjuan.app.ui.activity.FunctionalCommodityActivity;
 import com.lingjuan.app.ui.activity.PurchaseActivity;
 import com.lingjuan.app.ui.activity.RushActivity;
@@ -429,7 +430,8 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener, 
                /* intent.putExtra("min_price", 2);
                 intent.putExtra("max_price", 9.9);
                 intent.putExtra("name", "9.9包邮");*/
-                DialogUtil.showDialog(getActivity(), "暂无抽奖", "知道了", null);
+              //  DialogUtil.showDialog(getActivity(), "暂无抽奖", "知道了", null);
+                ActivityUtils.goActivity(Objects.requireNonNull(getContext()),DrawActivity.class);
                 break;
             default:
                 return;

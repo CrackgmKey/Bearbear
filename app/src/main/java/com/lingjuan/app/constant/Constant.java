@@ -27,6 +27,8 @@ public class Constant {
     public static final String HTTP_PIC = "http://"+HTTP_IP+"/"+HTTP_FILE +"/public/uploads/";
     //获取更新地址
     public static final String HTTP_UPDATA = "http://"+HTTP_IP+"/"+HTTP_FILE+"/updata/";
+    //抽奖转盘
+    public static final String HTTP_DRAW = "http://"+HTTP_IP+"/"+HTTP_FILE+"/draw/index.html";
     //图片后缀
     public static final String IMAGE_SUFFIX = "_310x310.jpg";
     //好单库APPK

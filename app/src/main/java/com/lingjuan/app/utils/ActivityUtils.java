@@ -5,6 +5,8 @@ import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.net.Uri;
+import android.text.TextUtils;
+import android.widget.TextView;
 
 import com.lingjuan.app.constant.Constant;
 import com.lingjuan.app.entity.PurchaseRzy;
@@ -84,6 +86,10 @@ public class ActivityUtils {
      * @param context 上下文
      */
     public static void showQQ(Context context){
+        if(TextUtils.isEmpty(Constant.USER_QQ_NUM)){
+            ToastManage.showText(context,"当前未设置客服联系方式");
+            return;
+        }
         if (checkApkExist(context, "com.tencent.mobileqq")){
             context.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("mqqwpa://im/chat?chat_type=wpa&uin="+Constant.USER_QQ_NUM +"&version=1")));
         }else{

@@ -5,7 +5,7 @@ android {
         config {
             keyAlias 'taoyunjuan'
             keyPassword 'tao123456'
-            storeFile file('E:/814/CkLingJuan/app/taoyunjuan.jks')
+            storeFile file('E:/814/Bearbears/app/taoyunjuan.jks')
             storePassword 'tao123456'
         }
     }
