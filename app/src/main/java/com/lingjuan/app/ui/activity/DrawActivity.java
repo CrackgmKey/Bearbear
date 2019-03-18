@@ -23,7 +23,6 @@ import butterknife.ButterKnife;
 
 /**
  * 抽奖页面
- *
  * @author: TaoHui
  * data: 2019/2/26 15:04
  */
@@ -55,26 +54,25 @@ public class DrawActivity extends BaseActivity {
         WebSettings webSettings = mWebView.getSettings();
         // 设置android下容许执行js的脚本
         webSettings.setJavaScriptEnabled(true);
+        //允许JS弹窗
         webSettings.setJavaScriptCanOpenWindowsAutomatically(true);
+        //添加JS交互 第一个参数是类  里面写上回调的方法  第二个参数是js调用的用户名
         mWebView.addJavascriptInterface(jsInterface, "jsApp");
+        //加载地址
         mWebView.loadUrl(Constant.HTTP_DRAW);
-       // mWebView.loadUrl("http://123.207.156.197/yg/draw/index.html");
-        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (!conduct) {
-                    ToastManage.showText(getActivity(), "大转盘正在进行,请停止后在关闭");
-                    return;
-                }
-                finish();
+        toolbar.setNavigationOnClickListener(v -> {
+            if (!conduct) {
+                ToastManage.showText(getActivity(), "大转盘正在进行,请停止后在关闭");
+                return;
             }
+            finish();
         });
-
         mWebView.setWebChromeClient(new WebChromeClient(){
             @Override
             public void onReceivedTitle(WebView view, String title) {
                 super.onReceivedTitle(view, title);
                 if(title != null){
+                    //获取网页标题
                     toolbar.setTitle(String.valueOf(title));
                 }
             }

@@ -22,7 +22,9 @@ public class PurchaseModel implements PurchaseView.M {
     @Override
     public void getData(String itemID) {
         p.showLoad();
-        DataHashMap spicyhotMap = DataHashMap.getInstance().appParam("itemid",itemID).Builder();
+        DataHashMap spicyhotMap = new DataHashMap();
+        spicyhotMap .put("itemid",itemID);
+        spicyhotMap. put("apikey","crackgmkey");
         HttpManage.getInstance().getItemDetal(new Subscriber<PurchaseRzy>() {
             @Override
             public void onCompleted() {

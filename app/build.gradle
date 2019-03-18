@@ -15,7 +15,7 @@ android {
         minSdkVersion 19
         targetSdkVersion 26
         versionCode 1
-        versionName "1.0.6"
+        versionName "1.0.7"
         multiDexEnabled false
         aaptOptions.cruncherEnabled = false
         aaptOptions.useNewCruncher = false
